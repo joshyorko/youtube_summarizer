@@ -1,4 +1,5 @@
-from pydantic import BaseModel, HttpUrl, Field, Optional
+from pydantic import BaseModel, HttpUrl, Field
+from typing import Optional
 
 class TranscriptRequest(BaseModel):
     url: HttpUrl = Field(..., description="The YouTube video URL to transcribe.")
