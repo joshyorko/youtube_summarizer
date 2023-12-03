@@ -19,7 +19,11 @@ def transcribe_audio_mp4(audio_file_path):
     try:
         transcript = result["text"]
         with open("transcript.md", "w", encoding="utf-8") as f:
-            f.write(transcript)
+            f.write(f'Summarize the following transcript into bullet points: {audio_file_path}: /n{transcript}')
     except KeyError as e:
         print(e)
-    return f'Summarize the following transcript into bullet points: {audio_file_path}: /n{transcript}'
+    return
+
+if __name__ == "__main__":
+    transcribe_audio_mp4(input("Enter the path to the audio file: "))
+    
