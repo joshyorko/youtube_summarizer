@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+requests 
+openai-whisper
+pytube 
+
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+python-dotenv
+
+PyJWT

@@ -1,6 +1,0 @@
- pytube 
- PyQt5 
- requests 
- openai-whisper
- fastapi
- uvicorn
