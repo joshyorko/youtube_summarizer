@@ -1,11 +1,12 @@
 from fastapi.testclient import TestClient
 from unittest.mock import patch
 from app.main import app
+from app.generate_token import create_test_token
 
 client = TestClient(app)
 
 # Insert your generated JWT token here
-TEST_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0X3VzZXIiLCJleHAiOjE3MDE2NDU0NTV9.Gv3qbFrKvmepFp3GR2RmlPwWmAAT5_8iL1u4R-PC3P8"
+TEST_TOKEN = create_test_token()
 
 @patch('app.routers.transcript.get_current_user')
 @patch('app.services.getyoutube.download_and_transcribe_youtube_audio')
