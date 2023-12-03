@@ -61,10 +61,10 @@ def download_and_transcribe_youtube_audio(url: str) -> str:
         logger.error(f"General error during download and transcription: {e}")
         raise
 
-# Example usage
-url = 'https://www.youtube.com/watch?v=dFJxwl-azEA'
-try:
-    transcript = download_and_transcribe_youtube_audio(url)
-    print(transcript)
-except Exception as e:
-    print(f"Error: {e}")
+if __name__ == "__main__":
+    url = 'https://www.youtube.com/watch?v=dFJxwl-azEA'
+    try:
+        transcript = download_and_transcribe_youtube_audio(url)
+        print(transcript)
+    except Exception as e:
+        print(f"Error: {e}")

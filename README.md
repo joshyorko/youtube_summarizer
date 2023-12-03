@@ -1,5 +1,8 @@
 # YouTube Transcript Service
 
+![Logo](app/logo_.png)
+
+
 This service is a FastAPI microservice that takes a YouTube URL and returns the transcript of the video.
 
 ## Getting Started

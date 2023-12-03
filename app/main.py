@@ -20,15 +20,7 @@ app.add_middleware(
 # Include routers
 app.include_router(transcript.router)
 
-@app.on_event("startup")
-async def startup_event():
-    # Perform startup tasks here, like initializing database connections
-    pass
 
-@app.on_event("shutdown")
-async def shutdown_event():
-    # Perform shutdown tasks here, like closing database connections
-    pass
 
 # Optionally, you can add custom exception handlers here
 
